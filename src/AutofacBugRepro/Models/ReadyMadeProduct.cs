@@ -30,9 +30,6 @@ namespace AutofacBugRepro.Models
 
         [StringLength(100), Required]
         public string Picture { get; set; }
-
-        [DisplayName("Availability")]
-        public bool ProductAvailable { get; set; }
         
         [DisplayName("Current Stock Level")]
         public int UnitInStock { get; set; }

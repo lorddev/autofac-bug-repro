@@ -11,8 +11,8 @@ namespace AutofacBugRepro
             DependencyInjection.Initialize(builder =>
             {
                 // DAL
-                builder.RegisterType<AutofacBugRepro>().As<IDbContext>().InstancePerLifetimeScope();
-                builder.RegisterType<AutofacBugRepro>().InstancePerLifetimeScope();
+                builder.RegisterType<AutofacBugReproContext>().As<IDbContext>().InstancePerLifetimeScope();
+                builder.RegisterType<AutofacBugReproContext>().InstancePerLifetimeScope();
                 builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
                 // Services

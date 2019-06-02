@@ -32,8 +32,7 @@ namespace AutofacBugRepro.Services
                     ProductName = p.ProductName,
                     Sku = p.Sku,
                     Price = p.UnitPrice,
-                    UnitInStock = p.UnitInStock,
-                    IsAvailable = p.ProductAvailable
+                    UnitInStock = p.UnitInStock
                 }).ToListAsync();
         }
 
